@@ -1,0 +1,122 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+::after,
+::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #fff;
+    font-size:14px ;
+    line-height: 1.3;;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none
+}
+.contaiher{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col{
+    width: 360px;
+    position: relative;
+    min-height: 350px;
+    border: 1px solid #000;
+}
+.col-1{
+    background-image: url(../img/фото1.png);
+}
+.col-2{
+    background-image: url(../img/фото2.png);
+}
+.col-3{
+    background-image: url(../img/фото3.png);
+}
+.col-1 .col-info{
+    background-color: rgba(198, 140, 87, 0.5);
+}
+.col-2 .col-info{
+    background-color: rgba(15, 92, 159, 0.5);;
+}
+.col-3 .col-info{
+    background-color: #A2A2A2;;
+}
+.col-info{
+    width: 100%;
+    height: 75px;
+    padding: 20px 15px 13px;
+    position: absolute;
+    bottom: 0;
+}
+.col-title{
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+.col-text-block{
+    display: flex;
+    justify-content: space-between;
+}
+.star{
+    color: rgb(253, 228, 0);
+}
+.col-hover{
+    width: 100%;
+    min-height: 0px;
+    position: absolute;
+    left: 350px;
+    min-height: 350px;
+    visibility: hidden;
+    padding: 45px 23px 20px ;
+    transition: 3s;
+    display: flex;
+
+}
+.col:hover .col:hover{
+    min-height: 350px;
+    top: 0px;
+    visibility: visible;
+}
+.col-hover-1{
+    background-color: #c68d5791;
+}
+.col-hover-2{
+    background-color: #0f5c9f8e;
+}
+.col-hover-3{
+    background-color: #A2A2A2;;
+}.col-hover{
+    color: #fff;
+    margin-top: auto;
+    margin-left: auto;
+
+}
+.col-hoverh3{
+    font-size: 16px;
+    margin-bottom: 36px;
+}
+.col-hover  a::before{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0 ;
+    border-style: solid;
+    border-width: 8,5px 0,5px 17px;
+    border-color: transparent transparent transparent;
+    margin-left: 10px;
+}
